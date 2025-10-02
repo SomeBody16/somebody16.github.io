@@ -25,5 +25,5 @@ in delivering high-quality work. I am a highly communicative individual and
 enjoy collaborating with others to achieve common goals. Responsibility is a
 core value of mine, and I always strive to meet deadlines and deliver results
 that exceed expectations.
-    `.trim()
+    `.trim(),
 }

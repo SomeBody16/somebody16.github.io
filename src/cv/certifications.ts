@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro"
+import type { ImageMetadata } from 'astro'
 
 import tebEdukacjaLogo from '@/assets/logo/teb-edukacja.jpeg'
 import microsoftLogo from '@/assets/logo/microsoft.png'
@@ -42,5 +42,5 @@ export const certifications: Certification[] = [
         name: 'Cisco IT Essentials',
         date: [6, 2018],
         icon: ciscoLogo,
-    }
+    },
 ]

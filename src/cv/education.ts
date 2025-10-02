@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro"
+import type { ImageMetadata } from 'astro'
 
 import wszibLogo from '@/assets/logo/wszib.jpeg'
 
@@ -15,5 +15,5 @@ export const education: Education[] = [
         degree: 'Inżynier (Bachelor), Informatyka (IT)',
         status: 'In progress',
         icon: wszibLogo,
-    }
+    },
 ]

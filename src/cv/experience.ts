@@ -1,4 +1,4 @@
-import type { ImageMetadata } from "astro"
+import type { ImageMetadata } from 'astro'
 
 import webBespokersIcon from '@/assets/company/web-bespokers.jpeg'
 import netzindianerIcon from '@/assets/company/netzindianer.png'
@@ -27,13 +27,7 @@ export const experience = [
             'Features in browser extension about filtering google result',
             'Manual application testing',
         ],
-        technologies: [
-            'JavaScript',
-            'CSS',
-            'Laravel',
-            'HTML',
-            'PHP',
-        ],
+        technologies: ['JavaScript', 'CSS', 'Laravel', 'HTML', 'PHP'],
     },
     {
         company: 'Netzindianer',
@@ -47,10 +41,7 @@ export const experience = [
             'Manual application testing',
             'Writing Unit Tests',
         ],
-        technologies: [
-            'Laravel',
-            'PHP',
-        ],
+        technologies: ['Laravel', 'PHP'],
     },
     {
         company: 'Backend Developer',
@@ -67,11 +58,7 @@ export const experience = [
             'Writing Unit Tests',
             'Working in Agile Environment',
         ],
-        technologies: [
-            'Clojure',
-            'Node.js',
-            'Python',
-        ],
+        technologies: ['Clojure', 'Node.js', 'Python'],
     },
     {
         company: 'Software Engineer',
@@ -86,11 +73,6 @@ export const experience = [
             'Presentations to managers about new features',
             'Working in Agile Environment',
         ],
-        technologies: [
-            'TypeScript',
-            'JavaScript',
-            'WebRTC',
-            'React',
-        ],
-    }
+        technologies: ['TypeScript', 'JavaScript', 'WebRTC', 'React'],
+    },
 ]

@@ -1,0 +1,28 @@
+@page {
+    size: auto;
+    margin: 0;
+}
+
+@print {
+    @page :footer {
+        display: none;
+    }
+    @page :header {
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .print-page-break {
+        clear: both;
+        page-break-after: always;
+    }
+
+    .print-hidden {
+        display: none !important;
+    }
+}

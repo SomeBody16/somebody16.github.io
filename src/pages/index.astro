@@ -1,7 +1,18 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import { PrintButton } from '@/components/print/print-button'
+import { PrintHidden } from '@/components/print/print-hidden'
+import Layout from '@/layouts/Layout.astro'
+import CV from '@/pages/cv.astro'
 ---
 
 <Layout>
-	cv
+    <CV />
+    <PrintHidden style={{
+        position: 'fixed',
+        bottom: '2rem',
+        right: '2rem',
+        zIndex: '50',
+    }}>
+        <PrintButton client:load/>
+        </PrintHidden>
 </Layout>

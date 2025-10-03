@@ -6,7 +6,7 @@ export const WorthMentioning = () => {
     return (
         <div className={`mt-4`}>
             <SectionTitle order='🏆' label='Worth mentioning' />
-            <div className='mt-4 grid grid-cols-2 gap-2 py-3'>
+            <div className='mt-4 grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-2 py-3'>
                 {worthMentioning.map((entry, index) => (
                     <Card key={index} className='py-3 gap-3'>
                         <CardHeader>

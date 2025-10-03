@@ -1,10 +1,10 @@
 import { basic } from '@/data/basic'
-import { ProfileAvatar } from '../profile-avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export const Header = () => {
     return (
         <header>
-            <div className='flex'>
+            <div className='flex flex-col-reverse md:flex-row print:flex-row'>
                 <div className='grow'>
                     <div className='flex h-24 items-end'>
                         <div className='text-8xl mr-4 text-primary'>CV.</div>
@@ -28,8 +28,14 @@ export const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className=''>
-                    <ProfileAvatar />
+                <div className='flex justify-center'>
+                    <Avatar className='size-2/3 md:size-[200px] print:size-[200px]'>
+                        <AvatarImage src={basic.photo.src} />
+                        <AvatarFallback className='text-2xl font-bold bg-primary text-primary-foreground'>
+                            {basic.name[0]}
+                            {basic.surname[0]}
+                        </AvatarFallback>
+                    </Avatar>
                 </div>
             </div>
             <div

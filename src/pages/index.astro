@@ -2,11 +2,31 @@
 import { PrintButton } from '@/components/print/print-button'
 import { PrintHidden } from '@/components/print/print-hidden'
 import Layout from '@/layouts/Layout.astro'
-import CV from '@/pages/cv.astro'
+import { Education } from '@/components/cv/section/education';
+import { Experience } from '@/components/cv/section/experience';
+import { Header } from '@/components/cv/section/header';
+import { Hobby } from '@/components/cv/section/hobby';
+import { Languages } from '@/components/cv/section/languages';
+import { PrintPageBreak } from '@/components/print/print-page-break';
+import { Skills } from '@/components/cv/section/skills';
+import { WorthMentioning } from '@/components/cv/section/worth-mentioning';
 ---
 
 <Layout>
-    <CV />
+	<main class='p-4 min-w-screen min-h-screen bg-gradient-to-br from-slate-50 to-slate-100'>
+        <Header client:load />
+        <Experience />
+        <PrintPageBreak />
+        <div class='mt-4 grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-2'>
+            <Skills />
+            <Hobby />
+            <Languages />
+            <Education />
+        </div>
+        <!-- <Certifications /> -->
+        <!-- <Activities /> -->
+        <WorthMentioning />
+    </main>
     <PrintHidden style={{
         position: 'fixed',
         bottom: '2rem',

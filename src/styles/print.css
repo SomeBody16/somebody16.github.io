@@ -13,6 +13,11 @@
 }
 
 @media print {
+    @page {
+        /* A4 */
+        size: 21cm 29.7cm;
+    }
+
     body {
         background-color: white;
     }

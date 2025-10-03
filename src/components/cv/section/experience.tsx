@@ -8,7 +8,7 @@ export const Experience = () => {
     return (
         <div className={`mt-4`}>
             <SectionTitle order='💼' label='Experience' />
-            <div className='mt-4 grid grid-cols-2 gap-2'>
+            <div className='mt-4 grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-2'>
                 {experience.map((entry, index) => (
                     <Card key={index} className='py-3 gap-3'>
                         <CardHeader>

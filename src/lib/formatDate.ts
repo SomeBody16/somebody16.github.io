@@ -1,4 +1,4 @@
-import type { MonthDate } from "@/data/_types"
+import type { MonthDate } from '@/data/_types'
 
 export const formatDate = (date: MonthDate | string) => {
     if (typeof date === 'string') {

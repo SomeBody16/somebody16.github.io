@@ -8,7 +8,9 @@ export const Skills = () => {
             <SectionTitle order='💻' label='Skills' />
             <div className='mt-4 flex gap-1 flex-wrap'>
                 {skills.map((label, index) => (
-                    <Badge variant='outline' key={index}>{label}</Badge>
+                    <Badge variant='outline' key={index}>
+                        {label}
+                    </Badge>
                 ))}
             </div>
         </div>

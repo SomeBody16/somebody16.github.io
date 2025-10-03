@@ -1,6 +1,6 @@
-import { education } from "@/data/education"
-import { SectionTitle } from "../section-title"
-import { Badge } from "@/components/ui/badge"
+import { education } from '@/data/education'
+import { SectionTitle } from '../section-title'
+import { Badge } from '@/components/ui/badge'
 
 export const Education = () => {
     return (
@@ -13,7 +13,9 @@ export const Education = () => {
                         <div className='flex gap-2'>
                             <span>{entry.degree}</span>
                         </div>
-                        <Badge variant='outline' className='mt-2'>{entry.status}</Badge>
+                        <Badge variant='outline' className='mt-2'>
+                            {entry.status}
+                        </Badge>
                     </div>
                 ))}
             </div>

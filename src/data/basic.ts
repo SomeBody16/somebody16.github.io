@@ -21,5 +21,7 @@ export const basic = {
 <p>
     I bring a track record of extreme <strong>ambition</strong> (competitive drive) and <strong>initiative</strong> (self-taught mastery), prioritizing high-quality work through strong <strong>attention to detail</strong>, responsibility, and a collaborative spirit.
 </p>
-    `.replaceAll('\n', ' ').trim(),
+    `
+        .replaceAll('\n', ' ')
+        .trim(),
 }

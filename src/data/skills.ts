@@ -1,5 +1,5 @@
-export const skills = [...new Set(
-    [
+export const skills = [
+    ...new Set([
         'TypeScript',
         'Nest.js',
         'Next.js',
@@ -20,6 +20,6 @@ export const skills = [...new Set(
         'GitHub',
         'Jira',
         'Microservices',
-        'WebRTC'
-    ]
-)]
+        'WebRTC',
+    ]),
+]

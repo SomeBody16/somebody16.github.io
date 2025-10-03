@@ -1,5 +1,5 @@
-import { formatDate } from "@/lib/formatDate"
-import type { MonthDateRange } from "./_types"
+import { formatDate } from '@/lib/formatDate'
+import type { MonthDateRange } from './_types'
 
 export type WorthMentioningItem = {
     label: string

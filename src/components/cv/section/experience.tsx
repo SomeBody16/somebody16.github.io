@@ -37,12 +37,16 @@ export const Experience = () => {
                         <CardContent>
                             <ul className='list-disc list-inside space-y-1 mb-4 text-slate-700 dark:text-slate-300'>
                                 {entry.description.map((item) => (
-                                    <li key={item} className='text-sm'>{item}</li>
+                                    <li key={item} className='text-sm'>
+                                        {item}
+                                    </li>
                                 ))}
                             </ul>
                             <div className='flex flex-wrap gap-2'>
                                 {entry.technologies.map((tech) => (
-                                    <Badge key={tech} variant='secondary'>{tech}</Badge>
+                                    <Badge key={tech} variant='secondary'>
+                                        {tech}
+                                    </Badge>
                                 ))}
                             </div>
                         </CardContent>

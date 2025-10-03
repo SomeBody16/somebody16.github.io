@@ -11,12 +11,13 @@ export const WorthMentioning = () => {
                     <Card key={index} className='py-3 gap-3'>
                         <CardHeader>
                             <div className='flex flex-col items-start'>
-                                <span className='text-sm text-slate-500 dark:text-slate-400'>
-                                    {entry.place}
-                                </span>
-                                <CardTitle className='text-lg mb-1' dangerouslySetInnerHTML={{
-                                    __html: entry.label,
-                                }} />
+                                <span className='text-sm text-slate-500 dark:text-slate-400'>{entry.place}</span>
+                                <CardTitle
+                                    className='text-lg mb-1'
+                                    dangerouslySetInnerHTML={{
+                                        __html: entry.label,
+                                    }}
+                                />
                             </div>
                         </CardHeader>
                     </Card>
